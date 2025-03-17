@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+</head>
+<body>
+    <h2>Quem descobriu o Brasil</h2>
+    <div>
+        <button id="pedro" onclick="positivo()">Pedro Álves Cabral</button> <br>
+        <button id="valeska" onclick="negativo()">Valeska Popozuda</button> <br>
+        <button id="guime" onclick="negativo()">MC Guime</button> <br>
+        <button id="anita" onclick="negativo()">Anita</button> <br>
+        <button id="ney" onclick="negativo()">Neymar</button>
+    </div>
+
+    <script>
+        function positivo(){
+            var correto = document.getElementById('pedro')
+            correto.style.backgroundColor = 'green'
+
+            correto.innerText = 'Clicou'
+            alert('Certa Resposta')
+        }
+
+        function negativo(){
+            var errado = document.getElementById('valeska')
+            errado.style.backgroundColor = 'red'
+
+            errado.innerText = 'Clicou'
+            alert('Resposta Errada')
+        }
+    </script>
+    
+</body>
+</html>

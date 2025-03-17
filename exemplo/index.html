@@ -8,12 +8,31 @@
 </head>
     
 <body>
-    <h1>My First Web Page</h1>
+    <h1>Quem descobriu o Brasil?</h1>
+    <div class="padrao" id="a" onclick="fa()">
+        Pedro Alves Cabral
+    </div>
+    <script>
+//         function fa(){
+//         var a = document.getElementById('ida')
+//         a.innerText = 'Certa Resposta'
+//         a.style.backgroundColor = 'green'
+// }
+
+    var a = document.getElementById('a')
+    a.addEventListener('click', x)
+
+    function x(){
+        a.innerText = 'Clicou'
+        alert('Certa Resposta')
+    }
+    </script>
+    <!-- <h1>My First Web Page</h1>
     <script type="text/javascript">
         document.write(Date());
     </script>
 
-    <button onclick="window.print()">Print this page</button>
+    <button onclick="window.print()">Print this page</button> -->
 
 </body>
 </html>
