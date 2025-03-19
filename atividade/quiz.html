@@ -6,14 +6,29 @@
     <title>Quiz</title>
 </head>
 <body>
-    <h2>Quem descobriu o Brasil</h2>
-    <div>
-        <button id="pedro" onclick="positivo()">Pedro Álves Cabral</button> <br>
-        <button id="valeska" onclick="negativo(this)">Valeska Popozuda</button> <br>
-        <button id="guime" onclick="negativo(this)">MC Guime</button> <br>
-        <button id="anita" onclick="negativo(this)">Anita</button> <br>
-        <button id="ney" onclick="negativo(this)">Neymar</button>
-    </div>
+
+    <main class="content-main">
+        <h2>Quem descobriu o Brasil?</h2>
+        <div class="bloco-quiz">
+            <button id="pedro" onclick="positivo()">Pedro Álves Cabral</button>
+            <button id="valeska" onclick="negativo(this)">Valeska Popozuda</button>
+            <button id="guime" onclick="negativo(this)">MC Guime</button>
+            <button id="anita" onclick="negativo(this)">Anita</button>
+            <button id="ney" onclick="negativo(this)">Neymar</button>
+        </div>
+    </main>
+
+    <style>
+        .bloco-quiz{
+            width: 10%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .bloco-quiz button{
+            background-color: rgb(255, 255, 255);
+        }
+    </style>
 
     <script>
         function positivo(){
