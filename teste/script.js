@@ -24,11 +24,11 @@ function nameValidate(){
         }
     }
     function passwordValidate2(){
-        if (inputs[2].value.length<8){
-            setError(2);
+        if (inputs[2].value.length>=8 && inputs[1].value == inputs[2].value){
+            removeError(2);
         }
         else{
-            removeError(2);
+            setError(2);
         }
     }
 }
