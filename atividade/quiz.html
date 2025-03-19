@@ -9,26 +9,24 @@
     <h2>Quem descobriu o Brasil</h2>
     <div>
         <button id="pedro" onclick="positivo()">Pedro Álves Cabral</button> <br>
-        <button id="valeska" onclick="negativo()">Valeska Popozuda</button> <br>
-        <button id="guime" onclick="negativo()">MC Guime</button> <br>
-        <button id="anita" onclick="negativo()">Anita</button> <br>
-        <button id="ney" onclick="negativo()">Neymar</button>
+        <button id="valeska" onclick="negativo(this)">Valeska Popozuda</button> <br>
+        <button id="guime" onclick="negativo(this)">MC Guime</button> <br>
+        <button id="anita" onclick="negativo(this)">Anita</button> <br>
+        <button id="ney" onclick="negativo(this)">Neymar</button>
     </div>
 
     <script>
         function positivo(){
-            var correto = document.getElementById('pedro')
+            let correto = document.getElementById('pedro')
             correto.style.backgroundColor = 'green'
 
-            correto.innerText = 'Acertou'
+            correto.innerText = 'Correto'
             alert('Certa Resposta')
         }
 
-        function negativo(){
-            var errado = document.getElementById('valeska')
-            errado.style.backgroundColor = 'red'
-
-            errado.innerText = 'Errou'
+        function negativo(botaoErrado){
+            botaoErrado.style.backgroundColor = 'red'
+            botaoErrado.innerText = 'Errado'
             alert('Resposta Errada')
         }
     </script>
